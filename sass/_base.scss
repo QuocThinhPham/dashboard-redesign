@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.main {
+    position: absolute;
+    left: $navigation-width;
+    width: calc(100% - #{$navigation-width});
+    min-height: 100vh;
+    background: $white;
+    transition: 0.5s;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.main.active {
+    left: $navigation-width-toggle;
+    width: calc(100% - #{$navigation-width-toggle});
+
+
+    @media screen and (max-width: 1024px) {
+        left: $navigation-width;
+    }
+
+    & .topbar-toggle {
+        @media screen and (max-width: 480px) {
+            position: fixed;
+            right: 0;
+            left: initial;
+            color: $white;
+        }
+    }
+}

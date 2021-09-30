@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Redesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Brand Name</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Customers</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Messages</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Help</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Settings</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Password</span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#" class="navigation-link">
+                        <span class="navigation-icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="navigation-title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="topbar-search">
+                <label for="">
+                    <input type="text" placeholder="Search here" />
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="topbar-user">
+                <img src="./images/user.jpg" alt="User">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-item">
+                <div>
+                    <div class="card-numbers">1,504</div>
+                    <div class="card-name">Daily Views</div>
+                </div>
+                <div class="card-icon">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card-item">
+                <div>
+                    <div class="card-numbers">80</div>
+                    <div class="card-name">Sales</div>
+                </div>
+                <div class="card-icon">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card-item">
+                <div>
+                    <div class="card-numbers">284</div>
+                    <div class="card-name">Comments</div>
+                </div>
+                <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="card-item">
+                <div>
+                    <div class="card-numbers">$7,842</div>
+                    <div class="card-name">Earning</div>
+                </div>
+                <div class="card-icon">
+                    <ion-icon name="cash-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="recent-orders">
+                <div class="details-header">
+                    <h2>Recent Orders</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table class="table hover">
+                    <thead class="table-heading">
+                        <tr>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="table-row">
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status delivered">Delivered</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Window Coolers</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td>
+                                <span class="status pending">Pending</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Speaker</td>
+                            <td>$620</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status return">Return</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Hp Laptop</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td>
+                                <span class="status in-progress">In Progess</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Apple Watch</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status delivered">Delivered</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status pending">Pending</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Adidas Shoes</td>
+                            <td>$620</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status return">Return</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Denim Shirts</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td>
+                                <span class="status in-progress">In Progess</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Casual Shoes</td>
+                            <td>$575</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status pending">Pending</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Wall Fan</td>
+                            <td>$110</td>
+                            <td>Paid</td>
+                            <td>
+                                <span class="status pending">Pending</span>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>Denim Shirts</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td>
+                                <span class="status in-progress">In Progess</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="recent-customers">
+                <div class="details-header">
+                    <h2>Recent Customers</h2>
+                </div>
+                <table class="table">
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img1.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>David<br><span>Italy</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img2.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Muhammad<br><span>India</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img3.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Amelia<br><span>France</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img4.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Olivia<br><span>USA</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img5.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Amit<br><span>Japan</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img6.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Ashraf<br><span>India</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img7.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Diana<br><span>Malaysia</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img8.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>Amit<br><span>India</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img1.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>David<br><span>Italy</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="60px">
+                            <div class="table-img">
+                                <img src="./images/img1.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <h4>David<br><span>Italy</span></h4>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

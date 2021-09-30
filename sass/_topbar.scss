@@ -1,0 +1,85 @@
+.topbar {
+    width: 100%;
+    height: 6rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-toggle {
+        position: relative;
+        top: 0;
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        cursor: pointer;
+
+        @media screen and (max-width: 480px) {
+            z-index: 1000;
+        }
+    }
+
+    &-search {
+        position: relative;
+        width: 40rem;
+        margin: 0 1rem;
+
+        & label {
+            position: relative;
+            width: 100%;
+
+            & input {
+                width: 100%;
+                height: 4rem;
+                border-radius: 4rem;
+                padding: 0.5rem 2rem;
+                padding-left: 3.5rem;
+                font-size: 1.6rem;
+                letter-spacing: 0.05rem;
+                outline: none;
+                border: 0.1rem solid $black-secondary;
+            }
+
+            & ion-icon {
+                position: absolute;
+                top: -0.5rem;
+                left: 1rem;
+                font-size: 1.8rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 25rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &-user {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 999rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 480px) {
+            min-width: 4rem;
+        }
+    }
+}

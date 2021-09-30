@@ -1,0 +1,121 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    &-heading tr {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+
+    &-row {
+        font-size: 1.5rem;
+        color: $black-primary;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &.hover td {
+        padding: 1.5rem;
+
+        &:nth-child(2) {
+            text-align: end;
+        }
+
+        &:nth-child(3) {
+            text-align: end;
+        }
+
+        &:last-child {
+            text-align: end;
+        }
+    }
+
+    &.hover &-body &-row:hover {
+        background: $blue-primary;
+        color: $white;
+    }
+
+    &-img {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 999rem;
+        overflow: hidden;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & tr:hover {
+        background: $blue-primary;
+        color: $white;
+        transition: 0.5s;
+
+        h4,
+        span {
+            color: $white;
+        }
+    }
+
+    & td {
+        padding: 1.2rem 1rem;
+        vertical-align: middle;
+
+        & h4 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2rem;
+
+            &>span {
+                font-size: 1.4rem;
+                color: $black-secondary;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        overflow-x: auto;
+    }
+}
+
+.status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    color: $white;
+
+    @media screen and (max-width: 1024px) {}
+
+    @media screen and (max-width: 768px) {
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+
+    &.delivered {
+        background: $sucess;
+    }
+
+    &.pending {
+        background: $warning;
+    }
+
+    &.return {
+        background: $danger;
+    }
+
+    &.in-progress {
+        background: $info;
+    }
+}
