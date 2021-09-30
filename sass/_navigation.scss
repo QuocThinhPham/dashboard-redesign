@@ -15,7 +15,7 @@
             left: 0;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 500px) {
             width: 100%;
             left: 0;
         }
@@ -114,7 +114,7 @@
         left: -#{$navigation-width};
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 500px) {
         width: 100%;
         left: -100%;
         z-index: 999;
